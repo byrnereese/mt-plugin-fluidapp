@@ -1,0 +1,15 @@
+name: Fluid App
+id: FluidApp
+key: FluidApp
+author_link: http://www.majordojo.com/
+author_name: Byrne Reese
+description: This plugin provides enhanced support for Fluid for Mac OS X.
+version: 0.90
+plugin_link: http://www.majordojo.com/projects/mt-fluid-app.php
+
+applications:
+    cms:
+        methods:
+            fluid_update: $FluidApp::FluidApp::Plugin::cms_update
+callbacks:
+    MT::App::CMS::template_source.header: $FluidApp::FluidApp::Plugin::xfrm_header
